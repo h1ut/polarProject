@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+}
+.container{
+    width: 1193px;
+    margin: 0 auto;
+}
+#burger, [for=burger]{
+    display:none
+}
+@media screen and (max-width: 500px){
+    .container {
+        width: 80%;
+    }
+    [for=burger]{
+        display:block
+    }
+    nav {
+        display: none;
+        position: fixed;
+        top: 50px;
+        margin-top: 30px;
+        background: rgba(rgba(189, 228, 238, 0.719), green, blue, alpha);
+    }
+    #burger:checked + label + nav {
+        display: block;
+        /* transition: 1s; */
+
+    }
+}
